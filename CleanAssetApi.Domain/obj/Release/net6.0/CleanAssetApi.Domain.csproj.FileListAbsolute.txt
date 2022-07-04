@@ -1,0 +1,12 @@
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\bin\Release\net6.0\CleanAssetApi.Domain.deps.json
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\bin\Release\net6.0\CleanAssetApi.Domain.dll
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\bin\Release\net6.0\CleanAssetApi.Domain.pdb
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Release\net6.0\CleanAssetApi.Domain.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Release\net6.0\CleanAssetApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Release\net6.0\CleanAssetApi.Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Release\net6.0\CleanAssetApi.Domain.AssemblyInfo.cs
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Release\net6.0\CleanAssetApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Release\net6.0\CleanAssetApi.Domain.dll
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Release\net6.0\refint\CleanAssetApi.Domain.dll
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Release\net6.0\CleanAssetApi.Domain.pdb
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Release\net6.0\ref\CleanAssetApi.Domain.dll

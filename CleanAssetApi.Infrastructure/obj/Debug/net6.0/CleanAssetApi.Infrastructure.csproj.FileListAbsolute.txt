@@ -1,0 +1,17 @@
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\bin\Debug\net6.0\CleanAssetApi.Infrastructure.deps.json
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\bin\Debug\net6.0\CleanAssetApi.Infrastructure.runtimeconfig.json
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\bin\Debug\net6.0\CleanAssetApi.Infrastructure.dll
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\bin\Debug\net6.0\CleanAssetApi.Infrastructure.pdb
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\bin\Debug\net6.0\CleanAssetApi.Domain.dll
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\bin\Debug\net6.0\CleanAssetApi.Domain.pdb
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\CleanAssetApi.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\CleanAssetApi.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\CleanAssetApi.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\CleanAssetApi.Infrastructure.AssemblyInfo.cs
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\CleanAssetApi.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\CleanAssetApi.Infrastructure.csproj.CopyComplete
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\CleanAssetApi.Infrastructure.dll
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\refint\CleanAssetApi.Infrastructure.dll
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\CleanAssetApi.Infrastructure.pdb
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\CleanAssetApi.Infrastructure.genruntimeconfig.cache
+C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Infrastructure\obj\Debug\net6.0\ref\CleanAssetApi.Infrastructure.dll
