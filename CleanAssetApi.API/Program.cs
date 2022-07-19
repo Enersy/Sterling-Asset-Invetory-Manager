@@ -1,5 +1,4 @@
 using CleanAssetApi.API;
-using CleanAssetApi.API.Models;
 using CleanAssetApi.Application.Interfaces;
 using CleanAssetApi.Application.Services;
 using CleanAssetApi.Infrastructure.Data;
@@ -14,9 +13,7 @@ ConfigurationManager configuration = builder.Configuration;
 LogManager.LoadConfiguration(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
 // Add services to the container.
 builder.Services.ConfigureLoggerService();
-builder.Services.Configure<PagingOptions>(
-    configuration.GetSection("DefaultPagingOptions")
-);
+
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
