@@ -10,3 +10,15 @@ C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\Cl
 C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\refint\CleanAssetApi.Domain.dll
 C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\CleanAssetApi.Domain.pdb
 C:\Users\Admin\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\ref\CleanAssetApi.Domain.dll
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\bin\Debug\net6.0\CleanAssetApi.Domain.deps.json
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\bin\Debug\net6.0\CleanAssetApi.Domain.dll
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\bin\Debug\net6.0\CleanAssetApi.Domain.pdb
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\CleanAssetApi.Domain.csproj.AssemblyReference.cache
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\CleanAssetApi.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\CleanAssetApi.Domain.AssemblyInfoInputs.cache
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\CleanAssetApi.Domain.AssemblyInfo.cs
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\CleanAssetApi.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\CleanAssetApi.Domain.dll
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\refint\CleanAssetApi.Domain.dll
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\CleanAssetApi.Domain.pdb
+C:\Users\Auduhj\Desktop\SterlingAssetAPI\CleanAssetApi.Domain\obj\Debug\net6.0\ref\CleanAssetApi.Domain.dll

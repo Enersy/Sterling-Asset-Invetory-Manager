@@ -22,8 +22,8 @@ namespace CleanAssetApi.API.Controllers
 
         }
         // GET: api/<DesktopController>
-        [HttpGet]
-        public async Task<IActionResult> Get([FromQuery] DesktopQueryStringParameters desktopQueryStringParameters)
+        [HttpGet(Name = nameof(GetDesktops))]
+        public async Task<IActionResult> GetDesktops([FromQuery] DesktopQueryStringParameters desktopQueryStringParameters)
         {
             var desktops = await _desktopService.GetDesktops(desktopQueryStringParameters);
 

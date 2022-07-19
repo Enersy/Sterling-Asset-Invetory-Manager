@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5iZNugXEy+l6WQJJ2YGwm2KSF7BE/HlbURYjtOiEBrvV3S04NZB/LsP/Lu43eZl1fu3E+l88Ic67uBn/ZnQpPA==",
+  "dgSpecHash": "RzHSAozvk3KKwksIhKtXeWZwN1Jf89h2xnxqK932SO9ou+c1PB04hXRtR3mL4qjkMBpJ5FTTdghILv2Nj+73mQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Domain\\CleanAssetApi.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Auduhj\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Domain\\CleanAssetApi.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Auduhj\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
   "logs": []
 }

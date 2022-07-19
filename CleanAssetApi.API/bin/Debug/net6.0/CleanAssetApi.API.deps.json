@@ -536,6 +536,9 @@
         }
       },
       "CleanAssetApi.Domain/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
         "runtime": {
           "CleanAssetApi.Domain.dll": {}
         }

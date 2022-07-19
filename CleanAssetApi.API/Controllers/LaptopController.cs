@@ -1,33 +1,54 @@
-﻿using CleanAssetApi.Application.Interfaces;
+﻿using CleanAssetApi.API.Models;
+using CleanAssetApi.Application.Interfaces;
 using CleanAssetApi.Domain;
 using CleanAssetApi.Domain.Exceptions;
 using CleanAssetApi.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 using Newtonsoft.Json;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace CleanAssetApi.API.Controllers
 {
+
     [Route("api/[controller]")]
     [ApiController]
     public class LaptopController : ControllerBase
     {
         private readonly ILoggerManager _logger;
         private readonly ILaptopService _LaptopService;
-        public LaptopController(ILaptopService LaptopService,ILoggerManager loggerManager)
+        private readonly PagingOptions _defaultPagingOptions;
+        public LaptopController(
+            ILaptopService LaptopService,
+            ILoggerManager loggerManager,
+            IOptions<PagingOptions> defaultPagingOptionsWrapper)
         {
             _logger = loggerManager;
             _LaptopService = LaptopService;
+         _defaultPagingOptions = defaultPagingOptionsWrapper.Value;
 
         }
         // GET: api/<LaptopController>
-        [HttpGet]
-        public async Task<IActionResult> Get([FromQuery] LaptopQueryStringParameters laptopQueryStringParameters)
+        [HttpGet(Name = nameof(GetLaptops))]
+        public async Task<IActionResult> GetLaptops(
+           [FromBody] LaptopQueryStringParameters laptopQueryStringParameters)
         {
             _logger.LogInfo("Fetching all Laptops from the database");
             var Laptops = await _LaptopService.GetLaptops(laptopQueryStringParameters);
             _logger.LogInfo("Fetching all Laptops from the database Successfully");
+
+
+           // pagingOptions.Offset = pagingOptions.Offset ?? _defaultPagingOptions.Offset;
+           // pagingOptions.Limit = pagingOptions.Limit ?? _defaultPagingOptions.Limit;
+
+            
+            var collection = PagedCollection<Laptop>.Create<LaptopResponse>(
+                Link.ToCollection(nameof(GetLaptops)),
+                Laptops.ToArray(),
+                Laptops.PageSize,
+                _defaultPagingOptions);
+
             var metadata = new
             {
                 Laptops.TotalCount,
@@ -39,7 +60,7 @@ namespace CleanAssetApi.API.Controllers
             };
             Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
 
-            return Ok(Laptops);
+            return Ok(collection);
 
         }
 

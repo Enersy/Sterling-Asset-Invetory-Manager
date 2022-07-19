@@ -18,6 +18,7 @@
   <ItemGroup>
     <ProjectReference Include="..\CleanAssetApi.Application\CleanAssetApi.Application.csproj" />
     <ProjectReference Include="..\CleanAssetApi.Infrastructure\CleanAssetApi.Infrastructure.csproj" />
+  
   </ItemGroup>
 
 </Project>

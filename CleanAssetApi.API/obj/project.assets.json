@@ -789,6 +789,9 @@
       "CleanAssetApi.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
         "compile": {
           "bin/placeholder/CleanAssetApi.Domain.dll": {}
         },
@@ -2302,41 +2305,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Users\\Auduhj\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin\\Desktop\\SterlingAssetAPI\\CleanAssetApi.API\\CleanAssetApi.API.csproj",
+      "projectUniqueName": "C:\\Users\\Auduhj\\Desktop\\SterlingAssetAPI\\CleanAssetApi.API\\CleanAssetApi.API.csproj",
       "projectName": "CleanAssetApi.API",
-      "projectPath": "C:\\Users\\Admin\\Desktop\\SterlingAssetAPI\\CleanAssetApi.API\\CleanAssetApi.API.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin\\Desktop\\SterlingAssetAPI\\CleanAssetApi.API\\obj\\",
+      "projectPath": "C:\\Users\\Auduhj\\Desktop\\SterlingAssetAPI\\CleanAssetApi.API\\CleanAssetApi.API.csproj",
+      "packagesPath": "C:\\Users\\Auduhj\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Auduhj\\Desktop\\SterlingAssetAPI\\CleanAssetApi.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\Auduhj\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Admin\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Application\\CleanAssetApi.Application.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Application\\CleanAssetApi.Application.csproj"
+            "C:\\Users\\Auduhj\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Application\\CleanAssetApi.Application.csproj": {
+              "projectPath": "C:\\Users\\Auduhj\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Application\\CleanAssetApi.Application.csproj"
             },
-            "C:\\Users\\Admin\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Infrastructure\\CleanAssetApi.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Admin\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Infrastructure\\CleanAssetApi.Infrastructure.csproj"
+            "C:\\Users\\Auduhj\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Infrastructure\\CleanAssetApi.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Auduhj\\Desktop\\SterlingAssetAPI\\CleanAssetApi.Infrastructure\\CleanAssetApi.Infrastructure.csproj"
             }
           }
         }
@@ -2384,7 +2385,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
