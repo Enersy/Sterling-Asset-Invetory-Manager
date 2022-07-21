@@ -27,6 +27,8 @@ builder.Services.AddScoped<ILaptopService, LaptopService>();
 builder.Services.AddScoped<ILaptopRepository, LaptopRepository>();
 builder.Services.AddScoped<IDesktopService, DesktopService>();
 builder.Services.AddScoped<IDesktopRepository, DesktopRepository>();
+builder.Services.AddScoped<IFakeDesktopService,FakeDesktopService>();
+builder.Services.AddScoped<IFakeDesktopRepository,FakeDesktopRepository>();
 
 var app = builder.Build();
 

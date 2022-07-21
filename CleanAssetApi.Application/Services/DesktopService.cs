@@ -1,5 +1,4 @@
 ﻿using CleanAssetApi.Application.Interfaces;
-using CleanAssetApi.Infrastructure.Repositories;
 using CleanAssetApi.Domain;
 using CleanAssetApi.Infrastructure.DBInterfaces;
 using CleanAssetApi.Infrastructure;

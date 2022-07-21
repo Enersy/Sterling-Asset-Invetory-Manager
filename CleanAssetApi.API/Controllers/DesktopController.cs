@@ -13,33 +13,50 @@ namespace CleanAssetApi.API.Controllers
     [ApiController]
     public class DesktopController : ControllerBase
     {
-        private readonly ILoggerManager  _logger;
+        private readonly ILoggerManager _logger;
         private readonly IDesktopService _desktopService;
-        public DesktopController(IDesktopService desktopService, ILoggerManager loggerManager)
+        private readonly IFakeDesktopService _fakeDesktopService;
+        private readonly IWebHostEnvironment _dev;
+        public DesktopController(
+            IDesktopService desktopService,
+             ILoggerManager loggerManager,
+             IFakeDesktopService fakeDesktopService,
+             IWebHostEnvironment dev)
         {
-            _logger= loggerManager;
-            _desktopService = desktopService; 
+            _logger = loggerManager;
+            _desktopService = desktopService;
+            _fakeDesktopService = fakeDesktopService;
+            _dev = dev;
 
         }
         // GET: api/<DesktopController>
         [HttpGet]
         public async Task<IActionResult> GetDesktops([FromQuery] DesktopQueryStringParameters desktopQueryStringParameters)
         {
-            var desktops = await _desktopService.GetDesktops(desktopQueryStringParameters);
+            PagedList<Desktop> _desktops;
+            if (_dev.IsDevelopment())
+            {
+                _desktops = await _fakeDesktopService.fakeGetDesktops(desktopQueryStringParameters);
+            }
+            else
+            {
+                _desktops = await _desktopService.GetDesktops(desktopQueryStringParameters);
+            }
+
 
             var metadata = new
             {
-               desktops.TotalCount,
-               desktops.PageSize,
-               desktops.CurrentPage,
-               desktops.TotalPages,
-               desktops.HasNext,
-               desktops.HasPrevious
+                _desktops.TotalCount,
+                _desktops.PageSize,
+                _desktops.CurrentPage,
+                _desktops.TotalPages,
+                _desktops.HasNext,
+                _desktops.HasPrevious
             };
             Response.Headers.Add("X-Pagination", JsonConvert.SerializeObject(metadata));
 
-            return Ok(desktops);
-            
+            return Ok(_desktops);
+
         }
 
         // GET api/<DesktopController>/5
@@ -58,12 +75,20 @@ namespace CleanAssetApi.API.Controllers
         [HttpPost]
         public void Post([FromBody] Desktop desktop)
         {
-            _desktopService.CreateDesktop(desktop);
+            if (_dev.IsDevelopment())
+            {
+                _fakeDesktopService.fakeCreateDesktop(desktop);
+            }
+            else
+            {
+                _desktopService.CreateDesktop(desktop);
+            }
+
         }
 
         // PUT api/<DesktopController>/5
         [HttpPut("{id}")]
-        public async void Put(Guid id, [FromBody] Desktop  desktop)
+        public async void Put(Guid id, [FromBody] Desktop desktop)
         {
             var desk = await _desktopService.GetDesktopById(id);
             if (desk == null)
@@ -80,15 +105,31 @@ namespace CleanAssetApi.API.Controllers
         [HttpDelete("{id}")]
         public async void Delete(Guid id)
         {
-            var desk = await _desktopService.GetDesktopById(id);
-            if (desk == null)
-            {
-                throw new AssetDoesNotExistException(id.ToString());
-            }
-            else
-            {
-                _desktopService.DeleteDesktop(desk);
-            }
+
+                if (_dev.IsDevelopment())
+                {
+                    var desk = await _fakeDesktopService.fakeGetDesktopById(id);
+                    if (desk == null)
+                    {
+                        throw new AssetDoesNotExistException(id.ToString());
+                    }else
+                    {
+                         _fakeDesktopService.fakeDeleteDesktop(desk);
+                    }
+                   
+                }
+                else
+                {
+                    var desk = await _desktopService.GetDesktopById(id);
+                    if (desk == null)
+                    {
+                        throw new AssetDoesNotExistException(id.ToString());
+                    }else
+                    {
+                        _desktopService.DeleteDesktop(desk);
+                    }
+                    
+                }
 
         }
     }
